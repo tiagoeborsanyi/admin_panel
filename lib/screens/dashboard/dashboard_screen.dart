@@ -1,6 +1,7 @@
 import 'package:admin_panel/constants.dart';
 import 'package:flutter/material.dart';
 
+import 'components/Chart.dart';
 import 'components/header.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -26,8 +27,24 @@ class DashboardScreen extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Container(
+                    padding: EdgeInsets.all(defaultPadding),
                     height: 500,
-                    color: primaryColor,
+                    decoration: BoxDecoration(
+                      color: secondaryColor,
+                      borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(
+                          'Storage Details',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        Chart()
+                      ],
+                    ),
                   ),
                 ),
               ],
