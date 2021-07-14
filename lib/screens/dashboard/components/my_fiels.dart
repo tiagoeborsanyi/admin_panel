@@ -1,6 +1,5 @@
 import 'package:admin_panel/models/MyFiles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constants.dart';
 import 'file_info_card.dart';
